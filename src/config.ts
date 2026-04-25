@@ -5,7 +5,8 @@ export const config = createConfig({
     connectors: [injected()],
   chains: [mainnet],
 	  transports: {
-	    [mainnet.id]: http(import.meta.env.VITE_ALCHEMY_URL),
+	    [mainnet.id]: http('https://eth.llamarpc.com'),
   },
 })
 
+// import.meta.env.VITE_ALCHEMY_URL)
